@@ -1,3 +1,6 @@
 *{
-    font-family: sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
+}
+section{
+    width: 15%;
 }
