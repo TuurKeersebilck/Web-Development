@@ -1,6 +1,14 @@
-.checklist{
-    list-style: square inside url(../img/uncheck.ico); 
+li{
+    background-image: url("../img/uncheck.png") ;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    padding-left: 20px; 
+    list-style: none;
 }
 .checked{
-    list-style: square inside url(../img/check.ico);
+        background-image: url("../img/check.jpg") ;
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        padding-left: 20px;
+        list-style: none;
 }
