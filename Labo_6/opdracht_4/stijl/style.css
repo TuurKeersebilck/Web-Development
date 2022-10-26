@@ -8,7 +8,7 @@ h1{
     font-variant: small-caps;
     background-color: red;
 }
-a:hover{
+section > a:hover{
     border-style: solid;
 }
 .stippeltjesrand{
