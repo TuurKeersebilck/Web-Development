@@ -1,0 +1,6 @@
+.checklist{
+    list-style: square inside url(../img/uncheck.ico); 
+}
+.checked{
+    list-style: square inside url(../img/check.ico);
+}
