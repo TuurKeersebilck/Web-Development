@@ -1,0 +1,22 @@
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    }
+    body{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    section{
+        padding: 20px 0 20px 0;
+    }
+    div.center{
+        text-align: center;
+    }
+    ul.centerlist{
+        display: inline-block;
+        text-align: left;
+    }
+    .tablecenter{
+        margin: auto;
+    }
