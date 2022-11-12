@@ -1,0 +1,29 @@
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+thead{
+    background-color:rgb(170,170,200);
+}
+.days{
+    color:rgb(200,190,240);
+    background-color:rgb(35,37,70);
+}
+.off{
+    background-color:rgb(250,120,120) 
+}
+.first-row > td:first-child{
+    background-color: lightgrey;
+}
+.first-row > td:last-child{
+    background-color: rgb(255, 220, 220);
+}
+.second-row > td:first-child,.third-row > td:first-child,.fourth-row > td:first-child,.fifth-row > td:first-child{
+    background-color: rgb(255, 220, 220);
+}
+.second-row > td:last-child,.third-row > td:last-child,.fourth-row > td:last-child{
+    background-color: rgb(255, 220, 220);
+}
+.fifth-row > td:nth-last-child(-n+3){
+    background-color: lightgrey;
+}
