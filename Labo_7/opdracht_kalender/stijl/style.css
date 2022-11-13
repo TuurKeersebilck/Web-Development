@@ -1,6 +1,9 @@
-table, th, td {
+table, th{
   border:1px solid black;
   border-collapse: collapse;
+}
+td{
+    border: thin dotted;
 }
 thead{
     background-color:rgb(170,170,200);
@@ -26,4 +29,9 @@ thead{
 }
 .fifth-row > td:nth-last-child(-n+3){
     background-color: lightgrey;
+}
+
+.underline{
+    color: blue;
+    text-decoration: underline;
 }
