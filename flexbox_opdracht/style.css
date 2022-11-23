@@ -63,7 +63,7 @@ body {
   inline-size: 100%;
   padding: 2em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
 /* zorg dat de statistische gegevens horizontaal komen */
 }
