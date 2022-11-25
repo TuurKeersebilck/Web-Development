@@ -1,12 +1,19 @@
-.column{
+body {
+margin: 0;
+
+}   
+.column1 {
     float: left;
-    width: 50%;
-    box-sizing: border-box;
+    width: calc(50% - 20px);
     border: 1px solid black;
-    padding: 10px;
-}
-.row:after{
-    display: table;
-    clear: both;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
+.column2 {
+    float: right;
+    width: calc(50% -  20px);
+    box-sizing: border-box;
+     border: 1px solid black;
+    margin: 10px;
+}
