@@ -1,0 +1,84 @@
+body{
+    width: 960px;
+    margin: auto;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----- TOP -----*/
+#top{
+    height: 200px;
+    background-image: url(../fotos/bgsky3.jpg);
+    text-align: center;
+    color: darkblue;
+    position: relative;
+}
+#top > p:first-child{
+    font-size: 300%;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+#top > p:nth-child(2){
+    font-size: 240%;
+    font-weight: bold;
+}
+#top img{
+    right: 90px;
+    position: absolute;
+    bottom: 60px;
+}
+
+/*----- NEWS -----*/
+.news{
+    width: 250px;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    float: right
+}
+.news h3{
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+.news p{
+    padding: 10px;
+    color: #666666;
+    font-size: 90%;
+}
+
+/*------ main -----*/
+#main{
+    width: 700px;
+    float: left;
+}
+#introalign{
+    display: flex;
+}
+#introalign img{
+    margin-top: 20px;
+}
+#introduction{
+    padding: 20px 30px 20px 0px;
+    margin: 0px 20px 0px 20px;
+}
+/*----- GALLERY -----*/
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #999999;
+}
+#gallery img{
+    max-width: 180px;
+    max-height: 180px;
+    padding: 10px;
+    background-color: white;
+
+}
+.foto{
+    margin: 10px 0px 10px 20px;
+    border: 1px dotted white;
+}
+
