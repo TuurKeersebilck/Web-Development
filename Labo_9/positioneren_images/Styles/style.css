@@ -1,15 +1,25 @@
+body{
+    width: 75%;
+    margin: auto;
+}
+
 article:nth-of-type(odd) img {
     float: left;
 }
 article:nth-of-type(even) img {
     float: right;
 }
-
+main:nth-of-type(odd) article {
+    float: left;
+}
+main:nth-of-type(even) article {
+    float: right;
+}
 article{
     font-size: 1.25em;
     margin: 10px;
     border: black solid 1px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 10px;
 }
 article img{
     margin: 10px;
