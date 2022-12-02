@@ -1,30 +1,32 @@
 body{
     width: 960px;
     margin: auto;
+    box-shadow: 15px 0 15px 0px darkgrey, -15px 0 15px 0px darkgrey;
+
 }
-*{
+    *{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*----- TOP -----*/
-#top{
+.top{
     height: 200px;
     background-image: url(../fotos/bgsky3.jpg);
     text-align: center;
     color: darkblue;
     position: relative;
 }
-#top > p:first-child{
+.top > p:first-child{
     font-size: 300%;
     font-style: italic;
     font-weight: bold;
     margin: 0;
 }
-#top > p:nth-child(2){
+.top > p:nth-child(2){
     font-size: 240%;
     font-weight: bold;
 }
-#top img{
+.top img{
     right: 90px;
     position: absolute;
     bottom: 60px;
@@ -50,27 +52,26 @@ body{
 }
 
 /*------ main -----*/
-#main{
+.main{
     width: 700px;
-    float: left;
 }
-#introalign{
+.introalign{
     display: flex;
 }
-#introalign img{
+.introalign img{
     margin-top: 20px;
 }
-#introduction{
+.introduction{
     padding: 20px 30px 20px 0px;
     margin: 0px 20px 0px 20px;
 }
 /*----- GALLERY -----*/
-#gallery{
+.gallery{
     display: flex;
     flex-wrap: wrap;
     background-color: #999999;
 }
-#gallery img{
+.gallery img{
     max-width: 180px;
     max-height: 180px;
     padding: 10px;
@@ -82,3 +83,23 @@ body{
     border: 1px dotted white;
 }
 
+/*----- FOOTER -----*/
+.bottom{
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+    display: flex;
+}
+.block{
+    padding-left: 120px;
+}
+.bottom a{
+    color: white;
+    text-decoration: none;
+}
+.bottom a:hover{
+    color: red;
+}
+.copyright{
+    text-align: center;
+}
