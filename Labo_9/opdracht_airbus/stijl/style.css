@@ -29,7 +29,7 @@ body{
 .top img{
     right: 90px;
     position: absolute;
-    bottom: 60px;
+    bottom: 73px;
 }
 
 /*----- NEWS -----*/
@@ -59,7 +59,8 @@ body{
     display: flex;
 }
 .introalign img{
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 .introduction{
     padding: 20px 30px 20px 0px;
@@ -81,6 +82,10 @@ body{
 .foto{
     margin: 10px 0px 10px 20px;
     border: 1px dotted white;
+}
+.foto img{
+    border: 1px dotted white;
+    display: flex;
 }
 
 /*----- FOOTER -----*/
