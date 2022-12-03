@@ -1,13 +1,19 @@
-body{
-    width: 960px;
-    margin: auto;
-    box-shadow: 15px 0 15px 0px darkgrey, -15px 0 15px 0px darkgrey;
-
-}
-    *{
+*{
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    width: 960px;
+    margin: 0 auto;
+    /*box-shadow: 15px 0 15px 0px darkgrey, -15px 0 15px 0px darkgrey;*/
+    
+    /*background: url("../fotos/pagebackground.png") center;
+    background-size: 920px;*/
 
+    background-image: url(../fotos/pagebackground.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-color:#e6e6e6;
+}
 /*----- TOP -----*/
 .top{
     height: 200px;
@@ -31,7 +37,6 @@ body{
     position: absolute;
     bottom: 73px;
 }
-
 /*----- NEWS -----*/
 .news{
     width: 250px;
@@ -50,13 +55,13 @@ body{
     color: #666666;
     font-size: 90%;
 }
-
 /*------ main -----*/
 .main{
     width: 700px;
 }
 .introalign{
     display: flex;
+
 }
 .introalign img{
     margin-top: 40px;
@@ -87,7 +92,6 @@ body{
     border: 1px dotted white;
     display: flex;
 }
-
 /*----- FOOTER -----*/
 .bottom{
     background-color: #666666;
