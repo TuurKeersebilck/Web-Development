@@ -32,21 +32,28 @@ figcaption {
 
 
 @media screen and (min-width: 768px){
+	/* 2 fotos naast elkaar */
 	figure{
-		background-color: orangered;
+		float: left;
+		width: 45%;
+		padding: 10px;
+		margin: 5px;
+	  }
+	  body{
+		background-color: violet;
+	  }
 
-	}
+	  
 }	
 @media screen and (min-width: 992px){
+	
 	figure{
-		background-color: violet;
-	}
-	.images{
-		display: flex;
-	}
-	.images img{
-		padding: 50px;
-	}
-
-
+		float: left;
+		width: 30%;
+		padding: 10px;
+		margin: 5px;
+	  }
+	  body{
+		background-color: paleturquoise;
+	  }
 }

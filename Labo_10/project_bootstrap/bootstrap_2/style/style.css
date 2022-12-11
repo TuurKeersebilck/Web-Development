@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg-light{
+    background-color: lightgrey;
+}
+.bg-darker{
+    background-color: grey;
+}
+.row > div{
+    height: 100px;
+}
+.row{
+    padding-top: 20px;
+}
+
