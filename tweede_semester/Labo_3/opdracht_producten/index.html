@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht Producten</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>producten</td>
+                <td>prijs</td>
+                <td>aantal</td>
+                <td>btw</td>
+                <td>subtotaal</td>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>product1</td>
+                <td class="prijs">10.00 Eur</td>
+                <td>     
+                        <input type="number" min ="0" value ="0">  
+                </td>
+                <td class="btw">6&percnt;</td>
+                <td class="subtotaal"></td>
+            </tr>
+
+            <tr>
+                <td>product2</td>
+                <td class="prijs">15.00 Eur</td>
+                <td>
+                    <input type="number" min ="0" value ="0">
+                </td>
+                <td class="btw">21&percnt;</td>
+                <td class="subtotaal"></td>
+            </tr>
+
+            <tr>
+                <td>product3</td>
+                <td class="prijs">12.20 Eur</td>
+                <td>
+                    <input type="number" min ="0" value ="0">
+                </td>
+                <td class="btw">21&percnt;</td>
+                <td class="subtotaal"></td>
+            </tr>
+
+            <tr>
+                <td colspan="4">totaal</td>
+                <td class="totaal"></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div class="herbereken">
+        <input type="button" value="Herbereken" id="button" >
+    </div>
+
+    <script src="script/herbereken.js" type="text/javascript"></script>
+</body>
+</html>
