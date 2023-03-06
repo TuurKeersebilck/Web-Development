@@ -5,9 +5,22 @@
     color: white;
     text-decoration: none;
 }
+header h1,h2{
+	display: flex;
+	justify-content: center;
+}
 section{
+	margin: auto;
     width: 15%;
 	padding-top: 15px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.eerste_semester{
+	padding-right: 25px;
+}
+.tweede_semester{
+	padding-left: 25px;
 }
 h2{
 	font-size: medium;
