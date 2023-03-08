@@ -5,6 +5,7 @@ const setup = () => {
         slider.addEventListener("change", update);
         slider.addEventListener("input", update);
     });
+    update();
 }
 
 
