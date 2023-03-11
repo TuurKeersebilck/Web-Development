@@ -3,8 +3,9 @@ const setup = () => {
 	document.addEventListener("click", maakMetSpaties);
 }
 const maakMetSpaties = () => {
-	var tekst = document.getElementById("textinput").value;
-        console.log(tekst);
+	let tekst = document.getElementById("textinput").value;
+	const spaties = tekst.split('').join(' ');
+    console.log(spaties);
 }
 
 window.addEventListener("load", setup);
