@@ -15,7 +15,6 @@ const setup = () => {
     optie.text = gemeenten[i];
     lijstGemeenten.add(optie);
   }
-
   }
   
   window.addEventListener("load", setup);
