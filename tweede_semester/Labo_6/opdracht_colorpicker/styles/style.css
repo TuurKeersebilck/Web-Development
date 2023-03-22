@@ -1,0 +1,25 @@
+.swatch {
+    width:125px;
+    height:125px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.main{
+    width:25%;
+    display: flex;
+    border: 5px solid rgba(0,0, 0, 0.2);
+    border-radius: 10px; 
+    padding: 10px;
+}
+.slides{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 0;
+}
+label{
+    padding: 10px 0 10px 0;
+}
+.values p{
+    width: 100%;
+    padding-right: 25px;
+}
