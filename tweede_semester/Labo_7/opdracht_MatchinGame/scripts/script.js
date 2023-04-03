@@ -7,7 +7,7 @@ const cards = new Map([["kaart1", 'img/kaart1.jpg'],["kaart2", 'img/kaart2.jpg']
 
 const setup = () => {
     generateCards()
-    setTimeout(hideCards, 1000);
+    setTimeout(hideCards,10);
     shuffle()
 }
 
@@ -15,7 +15,6 @@ const generateCards = () => {
     let cardsField = document.getElementById("cards");
     let cardsArray = Array.from(cards.keys());
 
-    // Put pairs of each kaart in the field
     for(let i = 0; i < AANTAL_KAARTEN; i++){
         let kaart1 = document.createElement("img");
 
@@ -31,6 +30,16 @@ const generateCards = () => {
         kaart2.setAttribute("kaartNaam", cardsArray[i]);
         kaart2.addEventListener("click", draaiKaart);
         cardsField.appendChild(kaart2);
+    }
+}
+
+const shuffle = () => {
+    let cards = document.getElementsByClassName("kaart");
+    let cardsArray = Array.from(cards);
+    let shuffledCards = cardsArray.sort(() => Math.random() - 0.5);
+    let cardsField = document.getElementById("cards");
+    for (let i = 0; i < cards.length; i++) {
+        cardsField.appendChild(shuffledCards[i]);
     }
 }
 
@@ -56,14 +65,14 @@ const controleerKaart = (kaart) => {
             flippedCards.push(cards[i]);
         }
     }
-    if(flippedCards.length === 2) {
+    if(flippedCards.length === 2){
         if(flippedCards[0].getAttribute("kaartNaam") === flippedCards[1].getAttribute("kaartNaam")) {
             flippedCards[0].removeEventListener("click", draaiKaart);
             flippedCards[1].removeEventListener("click", draaiKaart);
             flippedCards[0].style.visibility = "hidden";
             flippedCards[1].style.visibility = "hidden";
             score++;
-            veranderScore()
+            updateScore()
             resetKaarten()
         } 
         else{
@@ -80,23 +89,12 @@ const resetKaarten = () => {
     }
 }
 
-const shuffle = () => {
-    let cards = document.getElementsByClassName("kaart");
-    let cardsArray = Array.from(cards);
-    let shuffledCards = cardsArray.sort(() => Math.random() - 0.5);
-    let cardsField = document.getElementById("cards");
-    for (let i = 0; i < cards.length; i++) {
-        cardsField.appendChild(shuffledCards[i]);
-    }
-}
-
-const veranderScore = () => {
+const updateScore = () => {
     let scoreElement = document.getElementById("score");
     let scoreText = document.createTextNode(score);
 
     scoreElement.firstChild.remove()
     scoreElement.appendChild(scoreText);
 }
-
 
 window.addEventListener('load', setup);
