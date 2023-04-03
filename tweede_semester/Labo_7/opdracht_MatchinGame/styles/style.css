@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 10px;
+}
+.card {
+    width: auto;
+    height: 200px;
+}
+#score {
+    font-weight: bold;
+}
