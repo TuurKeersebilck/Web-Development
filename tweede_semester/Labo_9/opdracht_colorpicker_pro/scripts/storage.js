@@ -28,12 +28,12 @@ const storeSwatches = () => {
     let swatches = swatchComponents.getElementsByClassName("swatch");
     let swatchInfo = [];
 
-    for (let i = 0; i < swatches.length; i++){
+    for (let i = 0; i < swatches.length; i++) {
         let swatch = swatches[i];
         let red = swatch.getAttribute("data-red");
         let green = swatch.getAttribute("data-green");
         let blue = swatch.getAttribute("data-blue");
-        swatchInfo.push({red, green, blue});
+        swatchInfo.push({ red, green, blue });
     }
 
     localStorage.setItem("savedSwatches", JSON.stringify(swatchInfo));
@@ -43,10 +43,14 @@ const restoreSwatches = () => {
     let swatchComponents = document.getElementById("swatchComponents");
     let swatchInfo = localStorage.getItem("savedSwatches");
 
-    if(swatchInfo){
+    if (swatchInfo) {
         swatchInfo = JSON.parse(swatchInfo);
-        for (let i = 0; i < swatchInfo.length; i++){
-            let swatch = buildSwatchComponent(swatchInfo[i].red, swatchInfo[i].green, swatchInfo[i].blue);
+        for (let i = 0; i < swatchInfo.length; i++) {
+            let swatch = buildSwatchComponent(
+                swatchInfo[i].red,
+                swatchInfo[i].green,
+                swatchInfo[i].blue
+            );
             swatchComponents.append(swatch);
         }
     }
