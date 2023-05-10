@@ -32,7 +32,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /*----- KNOP -----*/
-button {
+.searchButton {
   background-color: #289c3c;
   color: white;
   font-size: 3vh;
@@ -41,3 +41,25 @@ button {
   border: none;
   border-radius: 3px;
 }
+
+/*----- HISTORY -----*/
+.youtube {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.twitter {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.instagram {
+  background-color: #c32aa3;
+  color: #fff;
+}
+
+.google {
+  background-color: #4285f4;
+  color: #fff;
+}
+
