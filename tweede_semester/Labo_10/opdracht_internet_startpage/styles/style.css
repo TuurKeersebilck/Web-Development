@@ -43,6 +43,17 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /*----- HISTORY -----*/
+.go-button{
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding: 5px 10px 4px 10px;
+}
+.history{
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
 .youtube {
   background-color: #ff0000;
   color: #fff;

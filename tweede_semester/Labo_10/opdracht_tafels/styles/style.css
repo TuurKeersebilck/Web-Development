@@ -1,0 +1,30 @@
+.container{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.header{
+    font-weight: bold;
+
+    width:auto;
+    background-color: #112a40;
+    color: white;
+}
+.tafel{
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 10px;
+}  
+.tafel > div{
+    padding: 3px;
+}
+#tables{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.even{
+    background-color: darkgrey;
+}

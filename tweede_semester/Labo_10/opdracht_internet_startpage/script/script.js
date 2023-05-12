@@ -25,22 +25,22 @@ const isGeldig = () => {
 }
 
 const controleerSite = (zoekopdracht) => {
-    if(zoekopdracht.toLowerCase().startsWith("/y")){ //---------- YOUTUBE ----------
+    if(zoekopdracht.toLowerCase().startsWith("/y ")){ //---------- YOUTUBE ----------
         zoekterm = zoekopdracht.slice(2).trimStart();
         zoekYoutube(zoekterm);
         clearInput();
     }
-    else if(zoekopdracht.toLowerCase().startsWith("/t")){ //---------- TWITTER ----------
+    else if(zoekopdracht.toLowerCase().startsWith("/t ")){ //---------- TWITTER ----------
         zoekterm = zoekopdracht.slice(2).trimStart();
         zoekTwitter(zoekterm);
         clearInput();
     }
-    else if(zoekopdracht.toLowerCase().startsWith("/i")){ //---------- INSTAGRAM ----------
+    else if(zoekopdracht.toLowerCase().startsWith("/i ")){ //---------- INSTAGRAM ----------
         zoekterm = zoekopdracht.slice(2).trimStart();
         zoekInstagram(zoekterm)
         clearInput();
     }
-    else if(zoekopdracht.toLowerCase().startsWith("/g")){ //---------- GOOGLE ----------
+    else if(zoekopdracht.toLowerCase().startsWith("/g ")){ //---------- GOOGLE ----------
         zoekterm = zoekopdracht.slice(2).trimStart();
         zoekGoogle(zoekterm);
         clearInput();
@@ -103,8 +103,9 @@ const toonZoekopdrachten = () => {
   else{
     for (let zoekopdracht of zoekopdrachten) {
       let div = document.createElement('div');
-      div.classList.add('col-sm-4');
-      div.classList.add('card');
+      div.classList.add('col-3');
+      div.classList.add('me-5');
+      div.classList.add('history');
 
       let h3 = document.createElement('h3');
       h3.innerText = zoekopdracht.website;
@@ -114,7 +115,7 @@ const toonZoekopdrachten = () => {
 
       let goButton = document.createElement('button');
       goButton.classList.add('go-button');
-      goButton.innerText = 'Go';
+      goButton.innerText = 'Go!';
       goButton.onclick = () => {
         window.open(zoekopdracht.url, '_blank');
       }
