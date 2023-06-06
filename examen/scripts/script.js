@@ -52,26 +52,22 @@ const openForm = () => {
 const saveTask = (event) => {
     event.stopPropagation();
 
-    // Get the input values
     const taskName = document.querySelector("#txtTask").value;
     const taskDate = document.querySelector("#dateTask").value;
     const taskDescription = document.querySelector("#txtDescription").value;
 
-    // Create a task object with the input values
+
     const task = {
         name: taskName,
         date: taskDate,
         description: taskDescription
     };
 
-    // Retrieve existing tasks from localStorage or initialize an empty array
     const existingTasks = localStorage.getItem('tasks');
     let tasks = existingTasks ? JSON.parse(existingTasks) : [];
 
-    // Add the new task to the tasks array
-    tasks.push(task);
 
-    // Save the updated tasks array to localStorage
+    tasks.push(task);
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
     closeForm();
@@ -83,10 +79,10 @@ const closeForm = () => {
     const form = document.querySelector("form");
     form.remove();
 
-    const saveButton = document.querySelector(".saveButton");
+    const saveButton = document.querySelector(".button");
     saveButton.remove();
 
-    retrieveTasks(); // Retrieve and display updated tasks
+    retrieveTasks();
 }
 
 const retrieveTasks = () => {
