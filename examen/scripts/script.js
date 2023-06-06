@@ -9,8 +9,8 @@ const setup = () => {
 
 const verbergVerleden = () => {
     const taskDivs = document.querySelectorAll(".task");
-    let isHidden = false;
 
+    let isHidden = false;
     for (const taskDiv of taskDivs) {
         if (taskDiv.style.display === "none") {
             isHidden = true;
@@ -21,7 +21,8 @@ const verbergVerleden = () => {
         taskDivs.forEach(taskDiv => {
             taskDiv.style.display = "";
         });
-    } else {
+    }
+    else{
         const currentDate = new Date();
         taskDivs.forEach(taskDiv => {
             const taskDateStr = taskDiv.querySelector("p").textContent.replace("Date: ", "");
