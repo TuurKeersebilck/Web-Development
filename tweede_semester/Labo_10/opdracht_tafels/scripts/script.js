@@ -38,7 +38,7 @@ const tables = [];
 	const displayTables = () => {
 		const tablesDiv = document.getElementById("tables");
 
-		tablesDiv.innerHTML = "";
+		tablesDiv.textContent = "";
 
 		for (let i = 0; i < tables.length; i++) {
 			tablesDiv.appendChild(tables[i]);
