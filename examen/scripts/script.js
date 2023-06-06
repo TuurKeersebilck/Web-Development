@@ -3,7 +3,37 @@ const setup = () => {
     retrieveTasks();
 
     document.getElementById('wisAlleTaken').addEventListener('click',clear);
+
+    document.getElementById('hidePast').addEventListener('click',verbergVerleden);
 }
+
+const verbergVerleden = () => {
+    const taskDivs = document.querySelectorAll(".task");
+    let isHidden = false;
+
+    for (const taskDiv of taskDivs) {
+        if (taskDiv.style.display === "none") {
+            isHidden = true;
+            break;
+        }
+    }
+    if (isHidden) {
+        taskDivs.forEach(taskDiv => {
+            taskDiv.style.display = "";
+        });
+    } else {
+        const currentDate = new Date();
+        taskDivs.forEach(taskDiv => {
+            const taskDateStr = taskDiv.querySelector("p").textContent.replace("Date: ", "");
+            const taskDate = new Date(taskDateStr);
+
+            if (taskDate.getTime() < currentDate.getTime()) {
+                taskDiv.style.display = "none";
+            }
+        });
+    }
+};
+
 
 const clear = () => {
   localStorage.clear();
@@ -94,12 +124,12 @@ const retrieveTasks = () => {
 
     if (existingTasks) {
         const tasks = JSON.parse(existingTasks);
-
         for (let i = 0; i < tasks.length; i++) {
             const task = tasks[i];
 
             const taskDiv = document.createElement("div");
             taskDiv.classList.add('task');
+
             const taskName = document.createElement("h3");
             taskName.textContent = task.name;
             const taskDate = document.createElement("p");
